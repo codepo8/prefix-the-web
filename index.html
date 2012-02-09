@@ -1,114 +1,112 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset='utf-8'>
-
-  <title>codepo8/prefix-the-web @ GitHub</title>
-
-  <style type="text/css">
-    body {
-      margin-top: 1.0em;
-      background-color: #f1f0d5;
-      font-family: Helvetica, Arial, FreeSans, san-serif;
-      color: #000000;
-    }
-    #container {
-      margin: 0 auto;
-      width: 700px;
-    }
-    h1 { font-size: 3.8em; color: #0e0f2a; margin-bottom: 3px; }
-    h1 .small { font-size: 0.4em; }
-    h1 a { text-decoration: none }
-    h2 { font-size: 1.5em; color: #0e0f2a; }
-    h3 { text-align: center; color: #0e0f2a; }
-    a { color: #0e0f2a; }
-    .description { font-size: 1.2em; margin-bottom: 30px; margin-top: 30px; font-style: italic;}
-    .download { float: right; }
-    pre { background: #000; color: #fff; padding: 15px;}
-    hr { border: 0; width: 80%; border-bottom: 1px solid #aaa}
-    .footer { text-align:center; padding-top:30px; font-style: italic; }
-  </style>
+  <meta charset="UTF-8">
+  <title>Pre-fix the web</title>
+  <meta type="description" content="">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <link href='http://fonts.googleapis.com/css?family=Lilita+One|Amethysta' rel='stylesheet' type='text/css'>
+<style>
+  * { 
+    margin: 0;
+    padding: 0;
+  }
+  h1{font-family: "Lilita One";font-weight:normal;color:#0c0;
+  margin:10px 0;font-size:50px;text-align:center}
+  body{
+    padding: 2em;
+    background: #333;
+    background: -moz-linear-gradient(#333,#000);
+    background: -webkit-linear-gradient(#333,#000);
+    background: -ms-linear-gradient(#333,#000);
+    background: -o-linear-gradient(#333,#000);
+    background: linear-gradient(#333,#000);
+    color: #ccc;
+    font-size: 15px;
+    font-family: Amethysta,helvetica, arial, sans-serif;
+  }
+  ul,ol{ margin: 1em;}
+  header p{
+    font-weight:bold;
+    color: #fff;
+  }
+  h2{ font-size: 18px;margin-bottom:10px;color: #fff}
+  section h1{
+    font-size:30px;
+  }
+  section{
+    width: 45%;
+    float: left;
+  }
+  section:first-of-type{
+    background:#444;
+    padding: 1%;
+    margin-right: 3%;
+    border-radius: 10px;
+    box-shadow: 4px 4px 10px rgba(0,0,0,0.8);
+  }
+  
+  p,li{line-height: 1.3em; padding-bottom: .5em}
+  footer, section, header, aside, figure {
+    display: block;
+  }
+  ul a{
+    color: #fff;
+  }
+  footer{ clear:both;font-size:10px; color: #999;}
+  footer a{color: #ccc}
+</style>
 </head>
-
 <body>
-  <a href="https://github.com/codepo8/prefix-the-web"><img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub" /></a>
+  <header>
+    <h1>Pre-fix the web!</h1>
+    <p>TL;DR: Webkit-only solutions break standardisation and hurts the open web. Go and help by adding prefixes and removing webkit-only testing from repositories on GitHub.</p>
+  </header>
+  <section>
+    <header><h1>Pre-fixed solutions</h1></header>
+    <p>These are repositories that have been fixed by adding -moz-,-ms-,-o- and add non-prefixed CSS and/or by removing webkit-only browser detection</p>
+    <ul>
+      <li>
+        <a href="https://github.com/paullewis/Spikes">Spikes</a> 
+        by Paul Lewis - fixed by 
+        <a href="http://twitter.com/codepo8">Chris Heilmann</a>
+      </li>
+    </ul>
+  </section>
+  <section>
+    <h1>About</h1>
+    <p>Everybody in web design has a digital nemesis - Internet Explorer 6. We'd gladly see it go, we joke about it, we all spent far too much time of our lives fixing things for it. Time we could have spent that to do things that make the web better and our interfaces richer and the experience of our visitors much better.</p>
 
-  <div id="container">
+<p>IE6 didn't die for a long time because of a few reasons:</p> 
+<ul><li>It was bundled with the OS, so not upgrading the OS meant people didn't change their browser (and Vista was not a good enough reason to upgrade from XP2)</li><li>A lot of products were made in the end 90s that only worked in Internet Explorer 6 - its dominance on the market before Firefox was that strong that a lot of companies did not see it worth while to support standards when the proprietary things in IE gave you a quick and instant solution. </li><li>These products are still around and upgrading them would be too expensive.</li></ul>
 
-    <div class="download">
-      <a href="https://github.com/codepo8/prefix-the-web/zipball/master">
-        <img border="0" width="90" src="https://github.com/images/modules/download/zip.png"></a>
-      <a href="https://github.com/codepo8/prefix-the-web/tarball/master">
-        <img border="0" width="90" src="https://github.com/images/modules/download/tar.png"></a>
-    </div>
+<h2>We are repeating the same mistake right now!</h2>
 
-    <h1><a href="https://github.com/codepo8/prefix-the-web">prefix-the-web</a>
-      <span class="small">by <a href="https://github.com/codepo8">codepo8</a></span></h1>
-
-    <div class="description">
-      A call out to add prefixes for all browsers to webkit only code on Github
-    </div>
-
-    
-
-<p>Everybody in web design has a digital nemesis - Internet Explorer 6. We'd gladly see it go, we joke about it, we all spent far too much time of our lives fixing things for it. Time we could have spent that to do things that make the web better and our interfaces richer and the experience of our visitors much better.</p>
-
-<p>IE6 didn't die for a long time because of a few reasons: </p>
-
-<ul><li>It was bundled with the OS, so not upgrading the OS meant people didn't change their browser (and Vista was not a good enough reason to upgrade from XP2)
-</li><li>A lot of products were made in the end 90s that only worked in Internet Explorer 6 - its dominance on the market before Firefox was that strong that a lot of companies did not see it worth while to support standards when the proprietary things in IE gave you a quick and instant solution. 
-</li><li>These products are still around and upgrading them would be too expensive.</li></ul>
-
-<p>Thank god we are not making these mistakes any longer, right?</p>
-
-<p>Wrong! Right now we do exactly the same mistake we did back then, albeit we do it by supporting a browser engine - Webkit - instead of just one browser. There are more and more sites that tell our visitors they need Chrome or Safari to use them. In most cases, that is not true. It just means that the developers didn't bother supporting other browsers, or didn't want to test in them. </p>
+<p>Wrong! Right now we do exactly the same mistake we did back then, albeit we do it by supporting a browser engine - Webkit - instead of just one browser. There are more and more sites that tell our visitors they need Chrome or Safari to use them. In most cases, that is not true. It just means that the developers didn't bother supporting other browsers, or didn't want to test in them.</p> 
 
 <p>This is where we come in. Instead of pointing fingers at these developers, we are lucky enough these days that we are in a position where code gets released for us to extend and change. And this is what I'd like to call "-pre-fix the web". The process is simple:</p>
 
 <ol><li>Find a demo/project on Github that only works in Webkit</li>
-</li><li>Fork the project 
-</li><li>Add the missing prefixes to the CSS 
-</li><li>Extend JS code that tests for webkit only 
-</li><li>Commit your changes and send a pull request
-</li><li>Add your change to this repository as a comment</li></ol>
+<li>Fork the project </li>
+<li>Add the missing prefixes to the CSS </li>
+<li>Extend JS code that tests for webkit only to do proper feature detection</li>
+<li>Commit your changes and send a pull request</li>
+<li>Fork and add your change to this repository or as a comment</li></ol>
+
+<p>We will continue to add to the list of fixed products and tweet about your efforts.</p>
 
 <p>The open web and the developers of tomorrow thank you for this little effort.</p>
     
-
-    
-
-    
-
-    
-
-    
-      <h2>Authors</h2>
-      <p>Christian Heilmann (chris.heilmann@gmail.com)
-<br/>      </p>
-    
-
-    
-      <h2>Contact</h2>
-      <p>Christian Heilmann (chris.heilmann@gmail.com)
-<br/>      </p>
-    
-
-    <h2>Download</h2>
-    <p>
-      You can download this project in either
-      <a href="https://github.com/codepo8/prefix-the-web/zipball/master">zip</a> or
-      <a href="https://github.com/codepo8/prefix-the-web/tarball/master">tar formats.
-    </p>
-    <p>You can also clone the project with <a href="http://git-scm.com">Git</a>
-      by running:
-      <pre>$ git clone git://github.com/codepo8/prefix-the-web</pre>
-    </p>
-
-    <div class="footer">
-      get the source code on GitHub : <a href="https://github.com/codepo8/prefix-the-web">codepo8/prefix-the-web</a>
-    </div>
-
-  </div>
+  </section>
+  <footer>
+  <p>Written by 
+    <a href="http://christianheilmann.com/">Chris Heilmann</a> 
+    (<a href="http://twitter.com/codepo8">@codepo8</a>)
+  </p>
+</footer>
+<script>
+</script>
+<a href="https://github.com/codepo8/prefix-the-web"><img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub" /></a>
 
 </body>
 </html>
